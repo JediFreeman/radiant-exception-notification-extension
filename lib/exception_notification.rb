@@ -1,5 +1,3 @@
-require_dependency 'application'
-
 module ExceptionNotification
   
   ERROR_TYPES = {404 => FileNotFoundPage, 500 => InternalServerErrorPage}
