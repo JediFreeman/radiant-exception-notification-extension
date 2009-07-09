@@ -3,6 +3,8 @@ require 'pp'
 class ExceptionNotifier < ActionMailer::Base
   
   cattr_accessor :email_from, :email_to
+  
+  self.template_root = File.join(File.dirname(__FILE__),"..","views")
     
   def notification(exception, controller, request)
     time = Time.new
