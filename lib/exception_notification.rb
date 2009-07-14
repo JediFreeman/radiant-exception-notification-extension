@@ -44,9 +44,12 @@ module ExceptionNotification
   
   def status_500(request = generic_request)
     headers["Status"] = "500 Internal Server Error"
-    page = Page.find_error_page(500)
-    page.request = request
-    response.body = page.render
+    if page = Page.find_error_page(500)
+      page.request = request
+      response.body = page.render
+    else
+      response.body = "500 Internal Server Error. An exception occured while processing your request. Additionally, a custom Radiant managed 500 page was not found."
+    end
   end
   
   def generic_request
