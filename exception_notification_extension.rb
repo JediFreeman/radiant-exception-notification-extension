@@ -1,7 +1,8 @@
 require_dependency 'application_controller'
+require 'radiant-exception-notification-extension'
 
 class ExceptionNotificationExtension < Radiant::Extension
-  version "0.8.0"
+  version RadiantExceptionNotificationExtension::VERSION
   description "Adds exception notification with Radiant-managed error pages"
   url "http://github.com/digitalpulp"
   
