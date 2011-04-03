@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path('../lib', __FILE__)
-require 'radiant-exception-notification'
+require 'radiant-exception_notification-extension'
 
 Gem::Specification.new do |s|
-  s.name        = 'radiant-exception-notification-extension'
+  s.name        = 'radiant-exception_notification-extension'
   s.version     = RadiantExceptionNotificationExtension::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Josh French']

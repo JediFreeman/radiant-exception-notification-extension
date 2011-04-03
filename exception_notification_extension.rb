@@ -1,5 +1,5 @@
 require_dependency 'application_controller'
-require 'radiant-exception-notification-extension'
+require 'radiant-exception_notification-extension'
 
 class ExceptionNotificationExtension < Radiant::Extension
   version RadiantExceptionNotificationExtension::VERSION
