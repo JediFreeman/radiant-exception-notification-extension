@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 require_dependency 'application_controller'
 require 'radiant-exception_notification-extension'
 
