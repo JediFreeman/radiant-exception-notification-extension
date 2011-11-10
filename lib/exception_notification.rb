@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module ExceptionNotification
   
   ERROR_TYPES = {404 => FileNotFoundPage, 500 => InternalServerErrorPage}
